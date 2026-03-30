@@ -29,13 +29,6 @@ Originating from the popular [_Chinese Bazi Fortune Teller_](https://chatgpt.com
 
 项目源于 GPT Store 热门应用[_Chinese Bazi Fortune Teller_](https://chatgpt.com/g/g-67c3f7b74d148191a2167f44fd13412d-chinese-bazi-fortune-teller-can-tian-ba-zi-suan-ming-jing-zhun-pai-pan-jie-du)，现已融入**参天 AI**平台 ([cantian.ai](https://cantian.ai))。我们诚邀命理研究者与 AI 开发者加入，共同推动中国传统文化的传承与创新。
 
-### 联系我们
-
-- **邮箱**：[support@cantian.ai](mailto:support@cantian.ai)
-- **微信**：
-
-  <img src="https://github.com/user-attachments/assets/7790b64e-e03f-47e2-b824-38459549a6d8" alt="WeChat QR Code" width="200"/>
-
 ## 前置需求 ｜ Prerequisite
 
 Node.js 22 版本或以上。
