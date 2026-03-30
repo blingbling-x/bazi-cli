@@ -1,0 +1,42 @@
+{
+  "skill_name": "bazi",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我1990年农历五月十五中午12点出生的，男的，帮我看看八字",
+      "expected_output": "Should run `bazi paipan` with --lunar flag, gender 1, and return a complete Bazi chart with four pillars, 十神, 大运 etc. Should interpret results in Chinese.",
+      "files": [],
+      "assertions": [
+        "Used lunar date flag (--lunar / -l) rather than solar",
+        "Set gender to male (-g 1)",
+        "Ran bazi paipan command successfully",
+        "Response includes the four pillars (四柱) with correct Bazi string",
+        "Response interprets/explains the Bazi results (not just raw data dump)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "今天适合搬家吗？帮我看看黄历",
+      "expected_output": "Should run `bazi calendar` for today's date and check the 宜/忌 list to answer whether 搬家 is auspicious today.",
+      "files": [],
+      "assertions": [
+        "Ran bazi calendar command successfully",
+        "Response includes 宜 and 忌 lists from the calendar data",
+        "Response directly answers whether 搬家 is suitable today",
+        "Response mentions that 搬家/移徙/入宅 is not in the 宜 list"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "我的八字是 甲子 丁卯 庚午 丙戌，能查到对应的出生时间吗",
+      "expected_output": "Should run `bazi fan -b '甲子 丁卯 庚午 丙戌'` and return the matching solar datetime(s).",
+      "files": [],
+      "assertions": [
+        "Ran bazi fan command with the correct Bazi string",
+        "Response includes matching solar datetime(s)",
+        "Response mentions 1804 and/or 1864 as matching years",
+        "Response explains the 60-year cycle concept"
+      ]
+    }
+  ]
+}

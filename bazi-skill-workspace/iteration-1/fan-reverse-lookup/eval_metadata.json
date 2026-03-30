@@ -1,0 +1,11 @@
+{
+  "eval_id": 3,
+  "eval_name": "fan-reverse-lookup",
+  "prompt": "我的八字是 甲子 丁卯 庚午 丙戌，能查到对应的出生时间吗",
+  "assertions": [
+    "Ran bazi fan command with the correct Bazi string",
+    "Response includes matching solar datetime(s)",
+    "Response mentions 1804 and/or 1864 as matching years",
+    "Response explains the 60-year cycle concept"
+  ]
+}

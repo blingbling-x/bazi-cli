@@ -1,0 +1,94 @@
+{
+  "skill_name": "bazi",
+  "iteration": 1,
+  "configurations": [
+    {
+      "name": "with_skill",
+      "label": "With Bazi Skill",
+      "evals": [
+        {
+          "eval_name": "paipan-lunar-male",
+          "pass_rate": 1.0,
+          "passed": 5,
+          "total": 5,
+          "duration_seconds": 303.7,
+          "total_tokens": 29078
+        },
+        {
+          "eval_name": "calendar-today-move",
+          "pass_rate": 1.0,
+          "passed": 4,
+          "total": 4,
+          "duration_seconds": 99.1,
+          "total_tokens": 23568
+        },
+        {
+          "eval_name": "fan-reverse-lookup",
+          "pass_rate": 1.0,
+          "passed": 4,
+          "total": 4,
+          "duration_seconds": 96.5,
+          "total_tokens": 24697
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 1.0,
+        "stddev_pass_rate": 0.0,
+        "mean_duration_seconds": 166.4,
+        "stddev_duration_seconds": 118.8,
+        "mean_tokens": 25781,
+        "stddev_tokens": 2877
+      }
+    },
+    {
+      "name": "without_skill",
+      "label": "Without Skill (Baseline)",
+      "evals": [
+        {
+          "eval_name": "paipan-lunar-male",
+          "pass_rate": 1.0,
+          "passed": 5,
+          "total": 5,
+          "duration_seconds": 95.9,
+          "total_tokens": 27375
+        },
+        {
+          "eval_name": "calendar-today-move",
+          "pass_rate": 1.0,
+          "passed": 4,
+          "total": 4,
+          "duration_seconds": 91.8,
+          "total_tokens": 22019
+        },
+        {
+          "eval_name": "fan-reverse-lookup",
+          "pass_rate": 1.0,
+          "passed": 4,
+          "total": 4,
+          "duration_seconds": 44.9,
+          "total_tokens": 19541
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 1.0,
+        "stddev_pass_rate": 0.0,
+        "mean_duration_seconds": 77.5,
+        "stddev_duration_seconds": 27.7,
+        "mean_tokens": 22978,
+        "stddev_tokens": 3956
+      }
+    }
+  ],
+  "delta": {
+    "pass_rate": 0.0,
+    "duration_seconds": 88.9,
+    "tokens": 2803
+  },
+  "analyst_observations": [
+    "Both with-skill and without-skill agents achieved 100% pass rate on all assertions — the baseline agents were able to explore the project and find the bazi CLI on their own.",
+    "The with-skill paipan test took significantly longer (303s vs 96s) — this may be an outlier due to the agent spending time reading the full skill and raw JSON output. The other two tests were comparable.",
+    "Token usage is slightly higher with skill (~12% more), which is expected since the skill instructions are loaded into context.",
+    "The key qualitative difference is in response quality: the with-skill paipan response is more structured (organized sections for 日主分析, 十神特点, 神煞亮点, 大运走势, 总结建议) while the without-skill response, though comprehensive, is more of a data dump with less interpretive depth.",
+    "The assertions may be too easy — they check that the CLI was called correctly but don't evaluate response quality, which is where the skill's real value lies. The skill's benefit is more about consistent formatting and interpretive depth than about whether the CLI gets called at all."
+  ]
+}

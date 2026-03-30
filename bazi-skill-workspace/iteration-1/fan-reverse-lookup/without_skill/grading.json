@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Ran bazi fan command with the correct Bazi string",
+      "passed": true,
+      "evidence": "Agent explored the project, found the CLI, and ran bazi fan -b '甲子 丁卯 庚午 丙戌'"
+    },
+    {
+      "text": "Response includes matching solar datetime(s)",
+      "passed": true,
+      "evidence": "Response lists: 1804年3月21日 20:00:00 and 1864年3月6日 20:00:00"
+    },
+    {
+      "text": "Response mentions 1804 and/or 1864 as matching years",
+      "passed": true,
+      "evidence": "Both years are mentioned with dynasty context (清嘉庆九年, 清同治三年)"
+    },
+    {
+      "text": "Response explains the 60-year cycle concept",
+      "passed": true,
+      "evidence": "Response explains: 天干地支以60年为一个甲子循环，同一组八字在历史上会周期性出现"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

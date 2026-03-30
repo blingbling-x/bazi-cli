@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Used lunar date flag (--lunar / -l) rather than solar",
+      "passed": true,
+      "evidence": "Agent ran: node dist/cli.js paipan -l \"1990-5-15 12:00:00\" -g 1 -o json"
+    },
+    {
+      "text": "Set gender to male (-g 1)",
+      "passed": true,
+      "evidence": "Command included -g 1 flag"
+    },
+    {
+      "text": "Ran bazi paipan command successfully",
+      "passed": true,
+      "evidence": "Command executed successfully and produced JSON output with full Bazi data"
+    },
+    {
+      "text": "Response includes the four pillars (四柱) with correct Bazi string",
+      "passed": true,
+      "evidence": "Response shows: 八字：庚午 壬午 癸卯 戊午, with detailed table of 年柱/月柱/日柱/时柱"
+    },
+    {
+      "text": "Response interprets/explains the Bazi results (not just raw data dump)",
+      "passed": true,
+      "evidence": "Response includes 日主分析, 五行格局, 十神特点解读, 神煞亮点, 大运走势, and 总结建议 sections with detailed Chinese interpretation"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

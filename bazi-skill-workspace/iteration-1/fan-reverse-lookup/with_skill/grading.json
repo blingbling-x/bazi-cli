@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Ran bazi fan command with the correct Bazi string",
+      "passed": true,
+      "evidence": "Agent ran bazi fan with the Bazi string 甲子 丁卯 庚午 丙戌"
+    },
+    {
+      "text": "Response includes matching solar datetime(s)",
+      "passed": true,
+      "evidence": "Response lists: 1804年3月21日 20:00:00 and 1864年3月6日 20:00:00"
+    },
+    {
+      "text": "Response mentions 1804 and/or 1864 as matching years",
+      "passed": true,
+      "evidence": "Both years are mentioned with exact dates"
+    },
+    {
+      "text": "Response explains the 60-year cycle concept",
+      "passed": true,
+      "evidence": "Response explains: 天干地支的组合以60年为一个甲子循环，所以同样的八字会在历史上周期性出现"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

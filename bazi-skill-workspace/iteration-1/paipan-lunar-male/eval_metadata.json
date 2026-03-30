@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "eval_name": "paipan-lunar-male",
+  "prompt": "我1990年农历五月十五中午12点出生的，男的，帮我看看八字",
+  "assertions": [
+    "Used lunar date flag (--lunar / -l) rather than solar",
+    "Set gender to male (-g 1)",
+    "Ran bazi paipan command successfully",
+    "Response includes the four pillars (四柱) with correct Bazi string",
+    "Response interprets/explains the Bazi results (not just raw data dump)"
+  ]
+}

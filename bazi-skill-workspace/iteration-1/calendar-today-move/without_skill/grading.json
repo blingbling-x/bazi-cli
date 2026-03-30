@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Ran bazi calendar command successfully",
+      "passed": true,
+      "evidence": "Agent explored the project, found the CLI, and ran bazi calendar successfully"
+    },
+    {
+      "text": "Response includes 宜 and 忌 lists from the calendar data",
+      "passed": true,
+      "evidence": "Response lists 宜: 祭祀、会亲友、出行、立券、交易、冠笄、纳财 and 忌: 嫁娶、动土、掘井、起基、定磉、破土"
+    },
+    {
+      "text": "Response directly answers whether 搬家 is suitable today",
+      "passed": true,
+      "evidence": "Response opens with conclusion: 今天黄历上没有列出"搬家/移徙/入宅"为宜，不建议今天搬家"
+    },
+    {
+      "text": "Response mentions that 搬家/移徙/入宅 is not in the 宜 list",
+      "passed": true,
+      "evidence": "Response states: 今日宜做的事项为...其中并不包含与搬家相关的事项（如"移徙"或"入宅"）"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

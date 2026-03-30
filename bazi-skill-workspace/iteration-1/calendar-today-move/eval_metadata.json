@@ -1,0 +1,11 @@
+{
+  "eval_id": 2,
+  "eval_name": "calendar-today-move",
+  "prompt": "今天适合搬家吗？帮我看看黄历",
+  "assertions": [
+    "Ran bazi calendar command successfully",
+    "Response includes 宜 and 忌 lists from the calendar data",
+    "Response directly answers whether 搬家 is suitable today",
+    "Response mentions that 搬家/移徙/入宅 is not in the 宜 list"
+  ]
+}
