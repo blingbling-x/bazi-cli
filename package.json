@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cantian-ai/bazi-mcp.git"
+    "url": "git+https://github.com/blingbling-x/bazi-cli.git"
   },
   "keywords": [
     "bazi",

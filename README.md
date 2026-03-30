@@ -1,11 +1,8 @@
-# Bazi MCP (八字 MCP) by Cantian AI
+# Bazi (八字) by Cantian AI
 
-[![smithery badge](https://smithery.ai/badge/@cantian-ai/bazi-mcp)](https://smithery.ai/server/@cantian-ai/bazi-mcp)
-[![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/453ac410-d93a-45fb-8563-7d3cccfbe956)
+Unlock precise Bazi insights with **Bazi**, the first AI-powered Bazi calculator. Built to address inaccuracies in existing AI fortune-telling tools like GPT and DeepSeek, it delivers reliable Bazi data for personality analysis, destiny forecasting, and more.
 
-Unlock precise Bazi insights with the **Bazi MCP**, the first AI-powered Bazi calculator. Built to address inaccuracies in existing AI fortune-telling tools like GPT and DeepSeek, our MCP delivers reliable Bazi data for personality analysis, destiny forecasting, and more.
-
-### Why Bazi MCP?
+### Why Bazi?
 
 - **Accurate Bazi Calculations**: Provide insightful Bazi information.
 - **AI Agent Integration**: Empowers AI agents with precise Bazi data.
@@ -19,9 +16,9 @@ Originating from the popular [_Chinese Bazi Fortune Teller_](https://chatgpt.com
 
 ## 中文
 
-**八字 MCP**是参天 AI 推出的首个面向玄学领域的 MCP，针对 GPT 和 DeepSeek 等算命工具常出现的排盘错误，提供精准的八字数据，助力性格分析、命运预测等应用。
+**八字**是参天 AI 推出的首个面向玄学领域的精准八字计算工具，针对 GPT 和 DeepSeek 等算命工具常出现的排盘错误，提供精准的八字数据，助力性格分析、命运预测等应用。
 
-### 八字 MCP 亮点
+### 八字亮点
 
 - **精准排盘**：提供全面的八字排盘信息。
 - **AI 赋能**：为 AI 智能体提供可靠八字服务。
@@ -63,40 +60,7 @@ bazi calendar -s "2024-02-10T00:00:00+08:00"
 bazi paipan -s "2008-03-01T13:00:00+08:00" -o json
 ```
 
-## 开始使用 ｜ Start
-
-### 使用 Streamable HTTP 启动 | Start by Streamable HTTP transport
-
-```shell
-npm start
-```
-
-### 使用 Stdio 启动 ｜ Start by Stdio transport
-
-配置 AI 应用（例如 Claude Descktop）。
-
-Configure AI application (e.g. Claude Desktop).
-
-```json
-{
-  "mcpServers": {
-    "Bazi": {
-      "command": "npx",
-      "args": ["bazi-mcp"]
-    }
-  }
-}
-```
-
-### Installing via Smithery
-
-To install bazi-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@cantian-ai/bazi-mcp):
-
-```bash
-npx -y @smithery/cli install @cantian-ai/bazi-mcp --client claude
-```
-
-## 工具列表 | Tools
+## API
 
 ### getBaziDetail
 
@@ -473,4 +437,4 @@ npx -y @smithery/cli install @cantian-ai/bazi-mcp --client claude
 }
 ```
 
-**Keywords**: Bazi MCP, Bazi AI Agent, Fengshui AI Agent, Bazi Calculator MCP, Bazi Calculator AI, Cantian AI
+**Keywords**: Bazi, Bazi AI Agent, Fengshui AI Agent, Bazi Calculator, Bazi Calculator AI, Cantian AI
