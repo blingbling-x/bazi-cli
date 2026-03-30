@@ -4,29 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Bazi MCP (八字 MCP) is an MCP server for Chinese Bazi (八字/Four Pillars) fortune-telling calculations. It provides accurate Bazi data via the Model Context Protocol for AI agent integration. Built by Cantian AI.
+Bazi (八字) is a TypeScript library and CLI tool for Chinese Bazi (八字/Four Pillars) fortune-telling calculations. It provides accurate Bazi data as a library and command-line interface. Built by Cantian AI.
 
 ## Build & Run Commands
 
 - **Build**: `npm run tsc` — clears `dist/` and compiles TypeScript
-- **Start HTTP server**: `npm start` — builds then runs Express server on port 3000
-- **Smithery dev**: `npx @smithery/cli dev`
 
 There are no tests or lint scripts configured.
 
 ## Architecture
-
-### Transport Layer
-Three entry points serve the same MCP tools over different transports:
-- `src/stdio.ts` → StdioServerTransport (for Claude Desktop, `bazi-mcp` binary)
-- `src/httpServer.ts` → Express + StreamableHTTPServerTransport at `/mcp` (port 3000)
-- `src/smithery.ts` → Smithery marketplace integration
-
-### MCP Server (`src/mcp.ts`)
-Defines three tools using `@modelcontextprotocol/sdk`:
-- **getBaziDetail** — calculate Bazi from solar or lunar datetime + gender
-- **getSolarTimes** — reverse-lookup solar datetimes from a Bazi string
-- **getChineseCalendar** — get Chinese calendar (黄历) info for a date
 
 ### Core Logic (`src/lib/`)
 - `bazi.ts` — builds the full Bazi object (四柱, 十神, 大运, 神煞, 刑冲合会, etc.)
@@ -34,7 +20,7 @@ Defines three tools using `@modelcontextprotocol/sdk`:
 - `chineseCalendar.ts` — Chinese calendar information assembly
 
 ### Public API (`src/index.ts`)
-Exports `getBaziDetail()`, `getSolarTimes()`, `getChineseCalendar()` — used by both MCP tools and CLI.
+Exports `getBaziDetail()`, `getSolarTimes()`, `getChineseCalendar()` — used by CLI and consumers of the library.
 
 ### CLI (`src/cli.ts`)
 Binary `bazi` with subcommands: `paipan`, `fan`, `calendar`. Supports `--output markdown|json`.
@@ -43,8 +29,7 @@ Binary `bazi` with subcommands: `paipan`, `fan`, `calendar`. Supports `--output 
 
 - **tyme4ts** — lunar/solar calendar conversion and Chinese calendar calculations
 - **cantian-tymext** — extended Bazi calculation utilities (十神, 神煞, etc.)
-- **@modelcontextprotocol/sdk** — MCP protocol implementation
-- **zod** — tool parameter schema validation
+- **zod** — schema validation
 
 ## Code Conventions
 
