@@ -1,4 +1,4 @@
-# Bazi (八字) by Cantian AI
+# Bazi (八字) Cli
 
 Unlock precise Bazi insights with **Bazi**, the first AI-powered Bazi calculator. Built to address inaccuracies in existing AI fortune-telling tools like GPT and DeepSeek, it delivers reliable Bazi data for personality analysis, destiny forecasting, and more.
 
@@ -6,13 +6,6 @@ Unlock precise Bazi insights with **Bazi**, the first AI-powered Bazi calculator
 
 - **Accurate Bazi Calculations**: Provide insightful Bazi information.
 - **AI Agent Integration**: Empowers AI agents with precise Bazi data.
-- **Community-Driven**: Join enthusiasts to advance Chinese metaphysics.
-
-Originating from the popular [_Chinese Bazi Fortune Teller_](https://chatgpt.com/g/g-67c3f7b74d148191a2167f44fd13412d-chinese-bazi-fortune-teller-can-tian-ba-zi-suan-ming-jing-zhun-pai-pan-jie-du) GPTs in the GPT Store, this project is now integrated with **Cantian AI** ([cantian.ai](https://cantian.ai)). We invite Bazi practitioners and AI enthusiasts to collaborate, share insights, and contribute to our open-source community.
-
-### Get Involved
-
-- **Contact**: [support@cantian.ai](mailto:support@cantian.ai)
 
 ## 中文
 
@@ -22,9 +15,6 @@ Originating from the popular [_Chinese Bazi Fortune Teller_](https://chatgpt.com
 
 - **精准排盘**：提供全面的八字排盘信息。
 - **AI 赋能**：为 AI 智能体提供可靠八字服务。
-- **社区共建**：欢迎命理爱好者参与交流与开发。
-
-项目源于 GPT Store 热门应用[_Chinese Bazi Fortune Teller_](https://chatgpt.com/g/g-67c3f7b74d148191a2167f44fd13412d-chinese-bazi-fortune-teller-can-tian-ba-zi-suan-ming-jing-zhun-pai-pan-jie-du)，现已融入**参天 AI**平台 ([cantian.ai](https://cantian.ai))。我们诚邀命理研究者与 AI 开发者加入，共同推动中国传统文化的传承与创新。
 
 ## 前置需求 ｜ Prerequisite
 
