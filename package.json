@@ -6,8 +6,7 @@
   "devDependencies": {
     "@tsconfig/node22": "^22.0.1",
     "@types/express": "^5.0.3",
-    "@types/node": "^22.14.1",
-    "typescript": "^5.8.3"
+    "@types/node": "^22.14.1"
   },
   "repository": {
     "type": "git",
@@ -35,6 +34,7 @@
     "bazi": "./dist/cli.js"
   },
   "dependencies": {
+    "typescript": "^5.8.3",
     "@modelcontextprotocol/sdk": "^1.10.2",
     "cantian-tymext": "^0.0.21",
     "date-fns": "^3.6.0",
