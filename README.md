@@ -42,6 +42,34 @@ Node.js 22 版本或以上。
 
 Node.js 22 or above.
 
+## 命令行工具 | CLI
+
+全局安装后可直接在终端使用 `bazi` 命令进行排盘、反查、黄历查询。
+
+Install globally to use the `bazi` command for Bazi calculation, reverse lookup, and Chinese calendar.
+
+```bash
+npm install -g github:blingbling-x/bazi-cli
+```
+
+```bash
+# 排盘（公历）
+bazi paipan -s "2008-03-01T13:00:00+08:00" -g 1
+
+# 排盘（农历）
+bazi paipan --lunar "2000-5-5 12:00:00" --gender 0
+
+# 八字反查公历时间
+bazi fan -b "戊寅 己未 己卯 辛未"
+
+# 黄历
+bazi calendar
+bazi calendar -s "2024-02-10T00:00:00+08:00"
+
+# 输出 JSON 格式（默认 Markdown）
+bazi paipan -s "2008-03-01T13:00:00+08:00" -o json
+```
+
 ## 开始使用 ｜ Start
 
 ### 使用 Streamable HTTP 启动 | Start by Streamable HTTP transport
@@ -86,17 +114,17 @@ npx -y @smithery/cli install @cantian-ai/bazi-mcp --client claude
 
 - solarDatetime: `String`
 
-  > ISO 格式的阳历时间。例如：`2000-05-15T12:00:00+08:00`。  
+  > ISO 格式的阳历时间。例如：`2000-05-15T12:00:00+08:00`。
   > Solar datetime in ISO format. Example: `2000-05-15T12:00:00+08:00`.
 
 - lunarDatetime: `String`
 
-  > 农历时间。例如：`2000-05-15 12:00:00`。  
+  > 农历时间。例如：`2000-05-15 12:00:00`。
   > Lunar datetime. Example: `2000-05-15 12:00:00`.
 
 - gender: `Number`
 
-  > 性别。可选。0 - 女，1-男。默认 1。  
+  > 性别。可选。0 - 女，1-男。默认 1。
   > Gender. Optional. 0 for female, 1 for male. 1 by default.
 
 - eightCharProviderSect： `Number`
@@ -426,7 +454,7 @@ npx -y @smithery/cli install @cantian-ai/bazi-mcp --client claude
 
 - solarDatetime
 
-  > ISO 格式的阳历时间。例如：`2000-05-15T12:00:00+08:00`。  
+  > ISO 格式的阳历时间。例如：`2000-05-15T12:00:00+08:00`。
   > Solar datetime in ISO format. Example: `2000-05-15T12:00:00+08:00`.
 
 #### 结果示例 ｜ Result example
