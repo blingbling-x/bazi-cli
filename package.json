@@ -26,7 +26,7 @@
   },
   "scripts": {
     "tsc": "rm -rf dist && tsc",
-    "prepublishOnly": "npm run tsc && chmod +x dist/stdio.js dist/cli.js",
+    "prepare": "npm run tsc && chmod +x dist/stdio.js dist/cli.js",
     "smithery-dev": "npx @smithery/cli dev",
     "start": "npm run tsc && node dist/httpServer.js"
   },
