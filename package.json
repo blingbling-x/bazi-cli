@@ -6,7 +6,8 @@
   "devDependencies": {
     "@tsconfig/node22": "^22.0.1",
     "@types/express": "^5.0.3",
-    "@types/node": "^22.14.1"
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,7 @@
   },
   "scripts": {
     "tsc": "rm -rf dist && tsc",
-    "prepare": "rm -rf dist && node node_modules/typescript/bin/tsc && chmod +x dist/stdio.js dist/cli.js",
+    "prepublishOnly": "npm run tsc && chmod +x dist/stdio.js dist/cli.js",
     "smithery-dev": "npx @smithery/cli dev",
     "start": "npm run tsc && node dist/httpServer.js"
   },
@@ -34,7 +35,6 @@
     "bazi": "./dist/cli.js"
   },
   "dependencies": {
-    "typescript": "^5.8.3",
     "@modelcontextprotocol/sdk": "^1.10.2",
     "cantian-tymext": "^0.0.21",
     "date-fns": "^3.6.0",
