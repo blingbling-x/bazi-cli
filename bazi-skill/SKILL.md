@@ -5,7 +5,25 @@ description: "Use the `bazi` CLI tool to calculate Chinese Bazi (八字/Four Pil
 
 # Bazi CLI Skill
 
-This skill teaches you how to use the `bazi` command-line tool to provide Chinese Bazi (八字) fortune-telling calculations. The tool is already installed in this project — just run the commands directly.
+This skill teaches you how to use the `bazi` command-line tool to provide Chinese Bazi (八字) fortune-telling calculations.
+
+## Installation
+
+Before using the CLI, make sure it's installed globally:
+
+```bash
+npm install -g github:blingbling-x/bazi-cli
+```
+
+This installs two commands:
+- `bazi` — the CLI tool for Bazi calculations, calendar queries, etc.
+- `bazi-mcp` — the MCP server (for AI agent integration via stdio)
+
+If the command is not found after installation, you can also run it via npx:
+
+```bash
+npx bazi-mcp bazi paipan -s "1990-06-15T08:30:00+08:00" -g 1 -o json
+```
 
 ## Why this matters
 
